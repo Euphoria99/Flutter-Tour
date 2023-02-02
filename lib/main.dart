@@ -6,13 +6,24 @@ void main() {
       appBar: AppBar(
         title: const Text('Hello world'),
         centerTitle: true,
+        backgroundColor: Colors.red[600],
       ),
-      body: const Center(
-        child: Text('Body is centered'),
+      body: Center(
+        child: Text(
+          'Body is centered',
+          style: TextStyle(
+            color: Colors.grey[600],
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 0.5,
+            fontFamily: 'WorkSans',
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Text('click'),
+        backgroundColor: Colors.green[400],
       ),
     ),
   ));
