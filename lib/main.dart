@@ -16,16 +16,16 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text(
-          'Body is centered',
-          style: TextStyle(
-            color: Colors.grey[600],
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 0.5,
-            fontFamily: 'WorkSans',
-          ),
-        ),
+        // child: Image(
+        //   image: NetworkImage(
+        //     'https://i.pinimg.com/564x/15/76/5b/15765b5a2a9a4b0408b39e3424cbbbde.jpg',
+        //   ), //network-image
+        //   image: AssetImage('Assets/images/samurai.jpg'), //asset-image
+        // ),
+        child: Image.asset('Assets/images/samurai.jpg'),
+        // child: Image.network(
+        //   'https://i.pinimg.com/564x/15/76/5b/15765b5a2a9a4b0408b39e3424cbbbde.jpg',
+        // ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
