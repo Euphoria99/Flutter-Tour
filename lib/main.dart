@@ -16,15 +16,34 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        // child: Image(
-        //   image: NetworkImage(
-        //     'https://i.pinimg.com/564x/15/76/5b/15765b5a2a9a4b0408b39e3424cbbbde.jpg',
-        //   ), //network-image
-        //   image: AssetImage('Assets/images/samurai.jpg'), //asset-image
+        //button-1
+        // child: Icon(
+        //   Icons.airport_shuttle,
+        //   color: Colors.blue,
+        //   size: 50.0,
         // ),
-        child: Image.asset('Assets/images/samurai.jpg'),
-        // child: Image.network(
-        //   'https://i.pinimg.com/564x/15/76/5b/15765b5a2a9a4b0408b39e3424cbbbde.jpg',
+        //button-2
+        // child: ElevatedButton(
+        //   onPressed: () {
+        //     print('button clicked');
+        //   },
+        //   child: Text('Submit'),
+        //   style: ButtonStyle(
+        //     backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
+        //   ),
+        // ),
+        //button-3
+        child: ElevatedButton.icon(
+          onPressed: () {},
+          icon: Icon(Icons.open_in_new),
+          label: Text('Open the Link'),
+        ),
+        //button-4
+        // child: IconButton(
+        //   onPressed: () {},
+        //   icon: Icon(
+        //     Icons.open_in_new,
+        //   ),
         // ),
       ),
       floatingActionButton: FloatingActionButton(
