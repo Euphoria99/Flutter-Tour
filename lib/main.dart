@@ -15,36 +15,15 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        //button-1
-        // child: Icon(
-        //   Icons.airport_shuttle,
-        //   color: Colors.blue,
-        //   size: 50.0,
-        // ),
-        //button-2
-        // child: ElevatedButton(
-        //   onPressed: () {
-        //     print('button clicked');
-        //   },
-        //   child: Text('Submit'),
-        //   style: ButtonStyle(
-        //     backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
-        //   ),
-        // ),
-        //button-3
-        child: ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(Icons.open_in_new),
-          label: Text('Open the Link'),
-        ),
-        //button-4
-        // child: IconButton(
-        //   onPressed: () {},
-        //   icon: Icon(
-        //     Icons.open_in_new,
-        //   ),
-        // ),
+      // body: Container(
+      //   color: Colors.grey[400],
+      //   child: Text('hello there'),
+      //   padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+      //   margin: EdgeInsets.all(40),
+      // ),
+      body: Padding(
+        child: Text('hey!!'),
+        padding: EdgeInsets.all(90),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
