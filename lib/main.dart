@@ -6,8 +6,15 @@ void main() {
   ));
 }
 
-class MyCard extends StatelessWidget {
+class MyCard extends StatefulWidget {
   const MyCard({super.key});
+
+  @override
+  State<MyCard> createState() => _MyCardState();
+}
+
+class _MyCardState extends State<MyCard> {
+  int vikingLevel = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -67,7 +74,7 @@ class MyCard extends StatelessWidget {
               height: 10.0,
             ),
             Text(
-              '9',
+              '$vikingLevel',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 letterSpacing: 2.0,
@@ -97,6 +104,15 @@ class MyCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.amberAccent[200],
+        child: const Icon(Icons.add),
+        onPressed: () {
+          setState(() {
+            vikingLevel += 1;
+          });
+        },
       ),
     );
   }
