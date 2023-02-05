@@ -15,36 +15,37 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        //button-1
-        // child: Icon(
-        //   Icons.airport_shuttle,
-        //   color: Colors.blue,
-        //   size: 50.0,
-        // ),
-        //button-2
-        // child: ElevatedButton(
-        //   onPressed: () {
-        //     print('button clicked');
-        //   },
-        //   child: Text('Submit'),
-        //   style: ButtonStyle(
-        //     backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
-        //   ),
-        // ),
-        //button-3
-        child: ElevatedButton.icon(
-          onPressed: () {},
-          icon: Icon(Icons.open_in_new),
-          label: Text('Open the Link'),
-        ),
-        //button-4
-        // child: IconButton(
-        //   onPressed: () {},
-        //   icon: Icon(
-        //     Icons.open_in_new,
-        //   ),
-        // ),
+      body: Row(
+        children: [
+          Expanded(
+            child: Image.asset('Assets/images/samurai.jpg'),
+            flex: 3,
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
