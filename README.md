@@ -4,4 +4,4 @@
 
 - dev1 : VikingID card
 
-- dev1 : World Time App
+- dev2 : World Time App
