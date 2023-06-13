@@ -2,11 +2,8 @@
 *.cc linguist-detectable=false
 *.cpp linguist-detectable=false
 *.kt linguist-detectable=false
-*.rb linguist-detectable=false
-*.swift linguist-detectable=false
 *.cmake linguist-detectable=false
 *.gradle linguist-detectable=false
-*.json linguist-detectable=false
 *.plist linguist-detectable=false
 *.html linguist-detectable=false
 *.xml linguist-detectable=false
@@ -18,3 +15,6 @@
 *.xc* linguist-detectable=false
 Podfile linguist-detectable=false
 CMakeLists.txt linguist-detectable=false
+*.json linguist-detectable=true
+*.rb linguist-detectable=true
+*.swift linguist-detectable=true
